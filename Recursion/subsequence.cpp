@@ -9,7 +9,6 @@ void getsub(int i,int arr[] ,int n, vector<vector<int>> &v , vector<int> &ds){
         v.push_back(ds);
         return;
     }
-    
      getsub(i+1 , arr , n, v ,ds);
     ds.push_back(arr[i]);
     getsub(i+1 , arr , n , v , ds);
